@@ -7,13 +7,13 @@ const promiseOutput = (emosi) => {
       reject("Error!");
     } else if (emosi == "marah") {
       (async () => {
-        const dataIIX = calculate(await promiseTheaterIXX(), emosi);
+        const dataIXX = calculate(await promiseTheaterIXX(), emosi);
         const dataVGC = calculate(await promiseTheaterVGC(), emosi);
-        resolve(dataIIX + dataVGC);
+        resolve(dataIXX + dataVGC);
       })();
     } else if (emosi == "tidak marah"){
       (async () => {
-        const dataIIX = calculate(await promiseTheaterIIX(), emosi);
+        const dataIXX = calculate(await promiseTheaterIXX(), emosi);
         const dataVGC = calculate(await promiseTheaterVGC(), emosi);
         resolve(dataIXX + dataVGC);
       })();
